@@ -199,7 +199,7 @@
             overflow: hidden;
             position: relative;
         }
-        #canvas-container {
+        #canvas-container canvas { filter: drop-shadow(0 0 18px rgba(217,119,87,0.22)) drop-shadow(0 0 48px rgba(106,155,204,0.12)); border-radius: 6px; transition: filter .6s ease; } #canvas-container:hover canvas { filter: drop-shadow(0 0 28px rgba(217,119,87,0.38)) drop-shadow(0 0 80px rgba(106,155,204,0.20)); } #canvas-container {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -877,7 +877,7 @@
             if (!isPaused) loop();
         }
 
-        function downloadPNG() {
+        function downloadPNG() { const d=new Date(); const pad=n=>String(n).padStart(2,'0'); const ts=d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate())+'-'+pad(d.getHours())+pad(d.getMinutes()); saveCanvas('mycos-seed-'+params.seed+'-'+ts,'png'); return;
             saveCanvas('mycelial-cognition-seed-' + params.seed, 'png');
         }
 
