@@ -37,7 +37,7 @@
             overflow-y: auto;
             max-height: calc(100vh - 40px);
         }
-        .sidebar h1 {
+        .sidebar h1 .glyph{font-style:italic}.sidebar h1 .dot{display:inline-block;animation:mycos-pulse 2.4s ease-in-out infinite}@keyframes mycos-breathe{0%,100%{filter:drop-shadow(0 0 8px rgba(0,255,157,.25))}50%{filter:drop-shadow(0 0 22px rgba(255,0,200,.45))}}@keyframes mycos-pulse{0%,100%{opacity:.35}50%{opacity:1}} .sidebar h1 {letter-spacing:.18em;background:radial-gradient(circle at 30% 50%,#00ff9d 0%,#6a00ff 45%,#ff00c8 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 10px rgba(136,0,255,.35));animation:mycos-breathe 7s ease-in-out infinite;
             font-family: 'Lora', serif;
             font-size: 24px;
             font-weight: 500;
@@ -228,7 +228,7 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <h1>МYC·OS</h1>
+            <h1><span class="glyph">М</span>YC<span class="dot">·</span>OS</h1>
             <p class="subtitle">Rozproszone myślenie zapisane jako stygmergiczna sieć strzępek.</p>
 
             <!-- Seed Section -->
